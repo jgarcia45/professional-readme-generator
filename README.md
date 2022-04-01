@@ -5,7 +5,7 @@
 ![Technologies](https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white)
 
 ## Description
-Our task is to create a command-line application that dynamnically generates a professional README.md file from a user's input. I will be using node.js and the [Inquirer Package](https://www.npmjs.com/package/inquirer) within the application. The application will be invoked by using the following command:
+Our task is to create a command-line application that dynamnically generates a professional README.md file from a user's input. I will be using node.js and the [Inquirer Package](https://www.npmjs.com/package/inquirer) within the application. We are using this [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a guide to generate the README file. The application will be invoked by using the following command:
 ```
 node index.js
 ```
