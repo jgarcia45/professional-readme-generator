@@ -1,43 +1,43 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { 
-  if(!license) {
+function renderLicenseBadge(license) {
+  if (license.license === 'None') {
     return '';
+  } else {
+    return `![License Badge](https://img.shields.io/github/license/${license.github}/${license.repository})
+    `;
   }
-
-  return `![License Badge](https://img.shields.io/github/license/${license})
-  `;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { 
-  if(!license) {
+function renderLicenseLink(license) {
+  if (license.license === 'None') {
     return '';
+  } else {
+    return `[${license.name}](https://github.com/${license.github})`;
   }
-
-  return `[${license}](https://github.com/${license})`;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(!license) {
+  if (license.license === 'None') {
     return '';
-  }
-
-  return `
+  }else {
+    return `
   ## License
   Copyright (c) ${renderLicenseLink(license)}. All rights reserved.
-  Licensed under the ${license} license.
+  Licensed under the ${license.license} license.
   `;
- }
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data)}
 
   ## Description
   ${data.description}
@@ -69,8 +69,10 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credits}
 
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data)}
 `;
 }
 
 module.exports = generateMarkdown;
+
+//https://img.shields.io/github/license/jgarcia45/professional-readme-generator

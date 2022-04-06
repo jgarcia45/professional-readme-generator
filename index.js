@@ -2,7 +2,7 @@
 var inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const { rejects } = require('assert');
+//const { rejects } = require('assert');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -37,13 +37,27 @@ const questions = [
     {
         // Github
         type: 'input',
-        name: 'email',
+        name: 'github',
         message: 'What is your github username?',
         validate: githubInput => {
             if (githubInput) {
                 return true;
             } else {
                 console.log('Please enter your github username!');
+                return false;
+            }
+        }
+    },
+    {
+        // Repository
+        type: 'input',
+        name: 'repository',
+        message: 'What is the name of the repository?',
+        validate: repositoryInput => {
+            if (repositoryInput) {
+                return true;
+            } else {
+                console.log('Please enter your repository name!');
                 return false;
             }
         }
@@ -105,6 +119,34 @@ const questions = [
         }
     },
     {
+        // Tests
+        type: 'input',
+        name: 'tests',
+        message: 'What are the steps for testing?',
+        validate: testsInput => {
+            if (testsInput) {
+                return true;
+            } else {
+                console.log('Please enter your steps!');
+                return false;
+            }
+        }
+    },
+    {
+        // Contributing
+        type: 'input',
+        name: 'contributing',
+        message: 'How can others contribute to the project?',
+        validate: contributingInput => {
+            if (contributingInput) {
+                return true;
+            } else {
+                console.log('Please enter your steps!');
+                return false;
+            }
+        }
+    },
+    {
         // Credits
         type: 'input',
         name: 'credits',
@@ -123,15 +165,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please choose a license:',
-        choices: ['MIT', 'GNU AGPLv3', 'Unlicense', 'Apache'],
-        validate: licenseInput => {
-            if (licenseInput) {
-                return true;
-            } else {
-                console.log('Please enter a license!');
-                return false;
-            }
-        }
+        choices: ['MIT', 'GNU AGPLv3', 'Unlicense', 'Apache', 'None']
     },
 ];
 
