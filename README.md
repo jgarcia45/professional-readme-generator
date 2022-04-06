@@ -51,10 +51,10 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Screenshot
-![]()
+![README File](./assets/images/readme.png)
 
 ## Video
-A link to the [Video]():
+A link to the [Video](https://watch.screencastify.com/v/bdMPxYeGCbiDyQGm4E1j):
 
 ## Link
 A link to the [code](https://github.com/jgarcia45/professional-readme-generator):
