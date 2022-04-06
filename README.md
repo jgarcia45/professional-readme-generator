@@ -22,6 +22,7 @@ node index.js
 2. Open the terminal and ensure you are in the right file path.
 3. Run the command ```npm install``` to download the packages.
 4. Then run the command ```node index.js``` to run the software.
+5. The readme file is saved under the ```dist``` folder.
 
 ## User Story
 ```
