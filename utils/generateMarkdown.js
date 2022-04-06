@@ -27,7 +27,7 @@ function renderLicenseSection(license) {
   }else {
     return `
   ## License
-  Copyright (c) ${renderLicenseLink(license)}. All rights reserved.
+  Copyright (c) ${renderLicenseLink(license)}. All rights reserved.  
   Licensed under the ${license.license} license.
   `;
   }
@@ -58,6 +58,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Tests
+  ${data.tests}
 
   ## Contributing
   ${data.contributing}
@@ -74,5 +75,3 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
-
-//https://img.shields.io/github/license/jgarcia45/professional-readme-generator

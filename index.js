@@ -2,7 +2,6 @@
 var inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-//const { rejects } = require('assert');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -57,7 +56,7 @@ const questions = [
             if (repositoryInput) {
                 return true;
             } else {
-                console.log('Please enter your repository name!');
+                console.log('Please enter the name of your repository!');
                 return false;
             }
         }
@@ -94,7 +93,7 @@ const questions = [
         // Installation
         type: 'input',
         name: 'installation',
-        message: 'What are the steps for your project?',
+        message: 'What are the steps/installation for your project?',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -108,12 +107,12 @@ const questions = [
         // Usage
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use.',
+        message: 'Provide instructions and examples for use/usage.',
         validate: usageInput => {
             if (usageInput) {
                 return true;
             } else {
-                console.log('Please provide instructions!');
+                console.log('Please provide a usage!');
                 return false;
             }
         }
@@ -127,7 +126,7 @@ const questions = [
             if (testsInput) {
                 return true;
             } else {
-                console.log('Please enter your steps!');
+                console.log('Please enter the steps for testing!');
                 return false;
             }
         }
@@ -141,7 +140,7 @@ const questions = [
             if (contributingInput) {
                 return true;
             } else {
-                console.log('Please enter your steps!');
+                console.log('Please enter a way to contribute!');
                 return false;
             }
         }
