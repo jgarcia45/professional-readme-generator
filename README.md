@@ -51,6 +51,7 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Screenshot
+The screenshot shows the output of the markdown file that is generated.
 ![README File](./assets/images/readme.png)
 
 ## Video
