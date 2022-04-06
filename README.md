@@ -2,6 +2,9 @@
 [![MSU](https://img.shields.io/badge/MSU-Coding%20Bootcamp-green/)](https://bootcamp.msu.edu/)
 
 ## Technologies
+![Technologies](https://img.shields.io/badge/-JavaScript-007396?logo=JavaScript&logoColor=white)
+![Technologies](https://img.shields.io/badge/-Node.js-339933?logo=Node.js&logoColor=white)
+![Technologies](https://img.shields.io/badge/-npm-CB3837?logo=npm&logoColor=white)
 ![Technologies](https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white)
 
 ## Description
@@ -9,6 +12,16 @@ Our task is to create a command-line application that dynamnically generates a p
 ```
 node index.js
 ```
+## Installation
+***Requirments***
+
+[Node.js](https://nodejs.org/en/)
+
+***Once Installed:***
+1. Clone the Repository on to your machine.
+2. Open the terminal and ensure you are in the right file path.
+3. Run the command ```npm install``` to download the packages.
+4. Then run the command ```node index.js``` to run the software.
 
 ## User Story
 ```
@@ -43,7 +56,7 @@ THEN I am taken to the corresponding section of the README
 A link to the [Video]():
 
 ## Link
-A link to the [code]():
+A link to the [code](https://github.com/jgarcia45/professional-readme-generator):
 ```
-
+https://github.com/jgarcia45/professional-readme-generator
 ```
